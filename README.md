@@ -1,4 +1,4 @@
-# react-mobx-universal-starter
+# react-native-mobx-starter
 A simple starter for React Native with navigation and mobx.
 It utilizes expo
 
