@@ -1,0 +1,58 @@
+{
+  "name": "react-native-mobx-starter",
+  "description": "React Native with navigation and mobx simple starter",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "flow": "flow",
+    "flow-stub": "flow-scripts stub"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SirAlb3rt/react-native-mobx-starter"
+  },
+  "keywords": ["react", "react native", "react navigation", "mobx"],
+  "homepage": "https://github.com/SirAlb3rt/react-native-mobx-starter",
+  "bugs": {
+    "url": "https://github.com/SirAlb3rt/react-native-mobx-starter/issues"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "expo": "^18.0.3",
+    "mobx": "^3.2.1",
+    "mobx-react": "^4.2.2",
+    "mobx-utils": "^2.0.2",
+    "prop-types": "^15.5.10",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.45.1",
+    "react-navigation": "^1.0.0-beta.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "eslint": "^4.3.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react-native": "^2.3.2",
+    "flow-bin": "^0.51.0",
+    "flow-scripts": "^0.3.0",
+    "jest-expo": "~18.0.0",
+    "prettier-eslint": "^6.4.2",
+    "react-native-scripts": "0.0.50",
+    "react-test-renderer": "16.0.0-alpha.12"
+  }
+}
