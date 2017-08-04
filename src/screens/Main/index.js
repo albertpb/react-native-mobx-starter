@@ -5,20 +5,20 @@ import { Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-@inject('store')
+@inject('stores')
 @observer
 export default class MainScreen extends Component {
   static propTypes = {
     navigation: PropTypes.object,
-    store: PropTypes.object,
+    stores: PropTypes.object,
   };
 
   componentDidMount() {
-    this.props.store.users.getUsers();
+    this.props.stores.user.fetchData();
   }
 
-  goToAbout(user: string) {
-    this.props.navigation.navigate('Users', {
+  goToUser(user: string) {
+    this.props.navigation.navigate('User', {
       user: user,
     });
   }
@@ -30,13 +30,13 @@ export default class MainScreen extends Component {
       },
     });
 
-    const users = this.props.store.users.users.map((user, k) => {
+    const userList = this.props.stores.user.data.map((u, k) => {
       return (
         <TouchableOpacity
           key={k}
-          onPress={this.goToAbout.bind(this, user.first_name)}>
+          onPress={this.goToUser.bind(this, u.first_name)}>
           <Text>
-            {user.first_name}
+            {u.first_name}
           </Text>
         </TouchableOpacity>
       );
@@ -44,7 +44,7 @@ export default class MainScreen extends Component {
 
     return (
       <ScrollView style={styles.background}>
-        {users}
+        {userList}
       </ScrollView>
     );
   }

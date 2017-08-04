@@ -1,48 +1,55 @@
 {
-    "parser": "babel-eslint",
-    "plugins": [
-        "react",
-        "react-native",
-        "prettier",
-        "flowtype"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "env": {
-        "es6":     true,
-        "browser": true,
-        "node":    true,
-        "mocha":   true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:flowtype/recommended"
-    ],
-    "rules": {
-        "no-console": 0,
-        "no-useless-escape": 0,
-        "prettier/prettier": ["error", {
-          "singleQuote": true,
-          "trailingComma": "all",
-          "bracketSpacing": true,
-          "jsxBracketSameLine": true,
-          "parser": "babylon"
-        }],
-        "flowtype/no-types-missing-file-annotation": 0,
-        "react-native/no-unused-styles": 2,
-        "react-native/split-platform-components": 2,
-        "react-native/no-inline-styles": 2,
-        "react-native/no-color-literals": 2
-    },
-    "settings": {
-        "flowtype": {
-          "onlyFilesWithFlowAnnotation": true
-        }
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "react-native",
+    "prettier",
+    "flowtype",
+    "jest"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
     }
+  },
+  "env": {
+    "es6":     true,
+    "browser": true,
+    "node":    true,
+    "mocha":   true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "no-console": 0,
+    "no-useless-escape": 0,
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "trailingComma": "all",
+      "bracketSpacing": true,
+      "jsxBracketSameLine": true,
+      "parser": "babylon"
+    }],
+    "flowtype/no-types-missing-file-annotation": 0,
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
 }

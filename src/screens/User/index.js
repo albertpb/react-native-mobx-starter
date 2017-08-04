@@ -1,15 +1,11 @@
 /* @flow */
 
-import { inject, observer } from 'mobx-react';
 import { Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-@inject('store')
-@observer
-export default class UsersScreen extends Component {
+export default class UserScreen extends Component {
   static propTypes = {
-    store: PropTypes.object,
     navigation: PropTypes.object,
   };
 

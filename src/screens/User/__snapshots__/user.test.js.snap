@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User should renders user screen 1`] = `
+<ScrollViewMock
+  style={
+    Object {
+      "padding": 30,
+    }
+  }
+>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    focusedOpacity={0.7}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+    >
+      Trueman
+    </Text>
+  </TouchableOpacity>
+</ScrollViewMock>
+`;

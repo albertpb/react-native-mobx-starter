@@ -2,11 +2,11 @@
 
 /* Screens */
 import MainScreen from '../screens/Main';
-import UsersScreen from '../screens/Users';
+import UserScreen from '../screens/User';
 
 const routes = {
   Main: { screen: MainScreen },
-  Users: { screen: UsersScreen },
+  User: { screen: UserScreen },
 };
 
 export { routes };

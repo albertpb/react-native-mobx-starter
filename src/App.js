@@ -21,7 +21,7 @@ export default class App extends Component {
       mode: Platform.OS === 'ios' ? 'modal' : 'card',
     });
     return (
-      <Provider store={stores}>
+      <Provider stores={stores}>
         <AppNavigator />
       </Provider>
     );

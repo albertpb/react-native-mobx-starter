@@ -3,16 +3,16 @@
 import { action, observable } from 'mobx';
 import axios from 'axios';
 
-export default class Users {
-  @observable users = [];
+export default class UserStore {
+  @observable data = [];
 
   @action
-  getUsers() {
+  fetchData() {
     axios
       .get('http://www.mocky.io/v2/5972d4581000009a00441855')
       .then(
         action('getting-users-success', response => {
-          this.users = response.data;
+          this.data = response.data;
         }),
       )
       .catch(

@@ -1,8 +1,8 @@
-/* @flow */
+'use strict';
 
 import { useStrict } from 'mobx';
 
-/* Stores */
+// Stores
 import UserStore from './user';
 
 /**
@@ -12,6 +12,7 @@ import UserStore from './user';
  */
 useStrict(true);
 
-export default class Stores {
+module.exports = class Stores {
+  // Here you add all the stores.
   user = new UserStore();
-}
+};

@@ -9,23 +9,19 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch",
+    "test": "jest",
     "flow": "flow",
     "flow-stub": "flow-scripts stub"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"]
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/SirAlb3rt/react-native-mobx-starter"
   },
-  "keywords": [
-    "react",
-    "react native",
-    "react navigation",
-    "mobx"
-  ],
+  "keywords": ["react", "react native", "react navigation", "mobx"],
   "homepage": "https://github.com/SirAlb3rt/react-native-mobx-starter",
   "bugs": {
     "url": "https://github.com/SirAlb3rt/react-native-mobx-starter/issues"
@@ -38,27 +34,32 @@
     "mobx-utils": "^2.0.2",
     "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.12",
+    "react-dom": "^16.0.0-alpha.12",
     "react-native": "^0.45.1",
     "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-flow": "^6.23.0",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^4.3.0",
     "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-react-native": "^2.3.2",
     "flow-bin": "^0.51.0",
     "flow-scripts": "^0.3.0",
-    "jest-expo": "~18.0.0",
+    "jest": "^20.0.4",
     "prettier-eslint": "^6.4.2",
     "react-native-scripts": "0.0.50",
-    "react-test-renderer": "16.0.0-alpha.12"
+    "react-test-renderer": "^16.0.0-alpha.12"
   }
 }
